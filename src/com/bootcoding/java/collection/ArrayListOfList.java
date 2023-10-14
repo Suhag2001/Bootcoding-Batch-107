@@ -7,6 +7,7 @@ public class ArrayListOfList {
     public static void main(String[] args) {
         ArrayList<Integer>  arrayList = new ArrayList<>();
 
+
         System.out.println(  arrayList.isEmpty());
         System.out.println(arrayList);
 //        1.add()
