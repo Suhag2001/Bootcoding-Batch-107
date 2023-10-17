@@ -7,6 +7,9 @@ public class ArrayListOfList {
     public static void main(String[] args) {
 
         //The angle brackets (<>) in Java are typically referred to as "diamond operators."
+
+
+
         ArrayList<Integer> arrayList = new ArrayList<>();
         System.out.println(  arrayList.isEmpty());
         System.out.println(arrayList);
@@ -29,7 +32,7 @@ public class ArrayListOfList {
 //        2.remove()
         arrayList.remove(0);
 //        3.set()
-        arrayList.set(0,24);
+        arrayList.set(1,24);
         System.out.println(arrayList);
 
 //        4.contains()
@@ -37,9 +40,19 @@ public class ArrayListOfList {
 
 //       5.clear()
         arrayList.clear();
+        System.out.println(arrayList);
 
 //        6.isEmpty()
         System.out.println(  arrayList.isEmpty());
+
+        ArrayList<Student>  students = new ArrayList<>();
+
+        students.add(new Student("aman" ,30));
+        students.add(new Student("lucky",29));
+
+        System.out.println(students);
+
+
 
     }
 
