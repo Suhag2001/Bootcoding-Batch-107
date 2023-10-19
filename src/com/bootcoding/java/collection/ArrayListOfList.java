@@ -23,6 +23,9 @@ public class ArrayListOfList {
         arrayList.addFirst(20);
         System.out.println(arrayList);
 
+        arrayList.toString();
+        System.out.println(arrayList);
+
         System.out.println(arrayList.get(3));
 
 //        for (int i =0; i<arrayList.size();i++){
@@ -44,6 +47,8 @@ public class ArrayListOfList {
 
 //        6.isEmpty()
         System.out.println(  arrayList.isEmpty());
+
+
 
         ArrayList<Student>  students = new ArrayList<>();
 
