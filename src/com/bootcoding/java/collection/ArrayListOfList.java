@@ -1,16 +1,16 @@
 package src.com.bootcoding.java.collection;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
 
 public class ArrayListOfList {
     public static void main(String[] args) {
 
+
         //The angle brackets (<>) in Java are typically referred to as "diamond operators."
 
-
-
         ArrayList<Integer> arrayList = new ArrayList<>();
+
         System.out.println(  arrayList.isEmpty());
         System.out.println(arrayList);
 //        1.add()

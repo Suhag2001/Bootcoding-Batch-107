@@ -36,7 +36,6 @@ public class HashSetOfSet {
         System.out.println("arrays :" +a[2]);
 
 
-
         System.out.println( hashSet.isEmpty());
 
          hashSet.clear();
