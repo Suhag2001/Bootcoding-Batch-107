@@ -1,8 +1,6 @@
 package src.com.bootcoding.java.collection;
 
-import java.util.Collections;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 public class PriorityQueueOfQueue {
     public static void main(String[] args) {
@@ -15,5 +13,6 @@ public class PriorityQueueOfQueue {
         queue.offer(1);
         queue.offer(0);
         System.out.println(queue);
+
     }
 }
