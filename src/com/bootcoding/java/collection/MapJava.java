@@ -13,6 +13,8 @@ public class MapJava {
 //        1.HashMap
 //        2.LinkedHashMap
 //        3.TreeMap
+
+        
         TreeMap<Integer,String> map = new TreeMap<>();
 
         map.put(1,"Om");
