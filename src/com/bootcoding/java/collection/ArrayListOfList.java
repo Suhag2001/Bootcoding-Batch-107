@@ -11,7 +11,10 @@ public class ArrayListOfList {
 
         ArrayList<Integer> arrayList = new ArrayList<>();
 
-        System.out.println(  arrayList.isEmpty());
+        arrayList.addFirst(2);
+
+
+        System.out.println( arrayList.isEmpty());  //true
         System.out.println(arrayList);
 //        1.add()
         arrayList.add(12);
