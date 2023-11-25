@@ -5,8 +5,9 @@ import java.io.FileNotFoundException;
 public class Demo {
     public static void main(String[] args){
         ReadAndWrite readAndWrite = new ReadAndWrite();
+
       try {
-//          readAndWrite.readFile();
+          readAndWrite.readFile();
           Class.forName("org.postgresql.Driver");
       }catch (ClassNotFoundException c){
           c.printStackTrace();
