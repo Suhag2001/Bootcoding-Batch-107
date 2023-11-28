@@ -1,9 +1,8 @@
 package src.com.bootcoding.java.collection;
 
-import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
+import java.util.ArrayList;
 
-public class ArrayListOfList {
+public class ArrayListList {
     public static void main(String[] args) {
 
 
@@ -11,14 +10,15 @@ public class ArrayListOfList {
 
         ArrayList<Integer> arrayList = new ArrayList<>();
 
-        arrayList.addFirst(2);
+        arrayList.add(2);
 
 
-        System.out.println( arrayList.isEmpty());  //true
-        System.out.println(arrayList);
+//        System.out.println( arrayList.isEmpty());  //true
+//        System.out.println(arrayList);
 //        1.add()
         arrayList.add(12);
         arrayList.add(5);
+        System.out.println(arrayList);
         for(int i = 1; i< 23; i++){
             arrayList.add(i);
         }
@@ -38,11 +38,13 @@ public class ArrayListOfList {
 //        2.remove()
         arrayList.remove(0);
 //        3.set()
+        System.out.println(arrayList);
         arrayList.set(1,24);
+
         System.out.println(arrayList);
 
 //        4.contains()
-        System.out.println(arrayList.contains(12));
+        System.out.println(arrayList.contains(55));
 
 //       5.clear()
         arrayList.clear();
