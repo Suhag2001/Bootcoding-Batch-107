@@ -1,6 +1,7 @@
 package src.com.bootcoding.java.collection;
 
 import java.util.LinkedHashSet;
+import java.util.Set;
 
 //what is LinkedHashSet?
 //LinkedHashSet is a Hash table and Linked list implementation of the Set interface.
@@ -19,40 +20,36 @@ import java.util.LinkedHashSet;
 //public class LinkedHashSet<E> extends HashSet<E> implements Set<E>, Cloneable, Serializable
 public class LinkedHashSetOfSet {
     public static void main(String[] args) {
-        //method in LinkedHashSet:
-        //.add();
-        //.contains();
-        //.isEmpty();
-        //.size();
-        //.remove();
-        //.clear();
-        //.toArray();
-        //.iterator();
-        //.spliterator();
-        //.stream();
-        //.parallelStream();
-        //.forEach();
-        //.removeIf();
-        //.equals();
-        //.hashCode();
-        //.stream();
-        //.parallelStream();
-        //.forEachOrdered();
-        //.removeIf();
-        //.equals();
-        //.hashCode();
-        //.spliterator();
 
-        LinkedHashSet<String> linkedHashSet = new LinkedHashSet<>();
+
+        Set<String> linkedHashSet = new LinkedHashSet<>();
         linkedHashSet.add("Java");
         linkedHashSet.add("Python");
         linkedHashSet.add("C++");
+        linkedHashSet.add("kotlin");
+        linkedHashSet.add("javascript");
+        System.out.println(linkedHashSet);
+        int idx= 0;
+        for(String value : linkedHashSet){
+            if(idx==3){
+                linkedHashSet.remove(value);
+//                System.out.println(value);
+                break;
+            }
+            idx++;
+        }
+
+        System.out.println(linkedHashSet);
+
+
         linkedHashSet.add("Java");
         System.out.println(linkedHashSet +" "+" ---->  Maintains insertion order");
         System.out.println(linkedHashSet.contains("Java")+ " "+" ---->  Contains");
         System.out.println(linkedHashSet.isEmpty()+ " "+" ---->  Is Empty");
         System.out.println(linkedHashSet.size()+ " "+" ---->  Size");
-        linkedHashSet.remove("C++");
+        System.out.println( linkedHashSet.remove("C++"));;
+        System.out.println(  linkedHashSet.remove(0));
+
         System.out.println(linkedHashSet +" "+" ---->  Remove");
         linkedHashSet.clear();
         System.out.println(linkedHashSet +" "+" ---->  Clear");
@@ -74,5 +71,8 @@ public class LinkedHashSetOfSet {
         System.out.println(arr[2]+" "+" ----> To Array");
 
         System.out.println(linkedHashSet1.stream().count()+" "+" ---->  Stream Count");
+//        linkedHashSet.forEach( s -> {
+//            System.out.println(s);
+//        });
     }
 }

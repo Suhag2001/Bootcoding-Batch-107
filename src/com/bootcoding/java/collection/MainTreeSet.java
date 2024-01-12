@@ -23,51 +23,16 @@ import java.util.TreeSet;
 //O(Log n) is faster than O(n) because as the input size increases, the time taken by O(Log n) increases slowly as compared to O(n).
 
 public class MainTreeSet {
-    //TreeSet methods ?
-    //1. add() method
-    //2. addAll() method
-    //3. ceiling() method
-    //4. clear() method
-    //5. clone() method
-    //6. contains() method
-    //7. descendingIterator() method
-    //8. descendingSet() method
-    //9. first() method
-    //10. floor() method
-    //11. headSet() method
-    //12. higher() method
-    //13. isEmpty() method
-    //14. iterator() method
-    //15. last() method
-    //16. lower() method
-    //17. pollFirst() method
-    //18. pollLast() method
-    //19. remove() method
-    //20. removeAll() method
-    //21. retainAll() method
-    //22. size() method
-    //23. subSet() method
-    //24. tailSet() method
-    //25. toArray() method
-    //27. toString() method
-    //28. equals() method
-    //29. hashCode() method
-    //30. spliterator() method
-    //31. stream() method
-    //32. parallelStream() method
-    //33. forEach() method
-    //34. removeIf() method
-    //35. comparator() method
     public static void main(String[] args) {
         TreeSet<Integer> ts = new TreeSet<>();
-        ts.add(10);
+        ts.add(1000);
         ts.add(20);
-        ts.add(30);
-        ts.add(40);
+        ts.add(30999);
+        ts.add(405);
         ts.add(60);
         ts.add(50);
         ts.add(90);
-        ts.add(80);
+        ts.add(80124);
         ts.add(70);
         ts.add(100);
         System.out.println(ts+ "Arranged in ascending order");
@@ -92,12 +57,15 @@ public class MainTreeSet {
         System.out.println(ts.contains(100) + " is the use of contains() method");//use of contains() method
         System.out.println(ts.descendingSet()+ " is the use of descendingSet() method");//use of descendingSet() method
         System.out.println(ts.first()+ " is the use of first() method");//use of first() method
-        System.out.println(ts.headSet(50)+ " is the use of headSet() method");//use of headSet() method
+        System.out.println(ts);
+        System.out.println(ts.headSet(90)+ " is the use of headSet() method");//use of headSet() method
+        System.out.println(ts);
         System.out.println(ts.higher(50)+ " is the use of higher() method");//use of higher() method
         System.out.println(ts.isEmpty()+ " is the use of isEmpty() method");//use of isEmpty() method
         System.out.println(ts.last()+ " is the use of last() method");//use of last() method
         System.out.println(ts.lower(50)+ " is the use of lower() method"+"\n");//use of lower() method
         System.out.println(ts.pollFirst()+ " is the use of pollFirst() method");//use of pollFirst() method
+        System.out.println(ts);
         //After using pollFirst() method
         //10 is not present in TreeSet
         System.out.println(ts+ "\n");
